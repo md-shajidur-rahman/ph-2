@@ -1,0 +1,182 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Style */
+
+header {
+  /* height: 677px; */
+  /* background: #2d25a0; */
+  margin-bottom: 70px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 124px 0 156px;
+}
+nav a {
+  text-decoration: none;
+  padding-right: 15px;
+  color: rgb(7, 7, 7);
+}
+.button-color {
+  padding: 10px 24px;
+  background: #e02c6d;
+  text-decoration: none;
+  color: white;
+}
+.header-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #0a0a0a;
+}
+.heading {
+  width: 90%;
+}
+.header-heading img {
+  width: 556.01px;
+  height: 438px;
+  padding-left: 102px;
+  margin-top: 93px;
+}
+header:hover .photo {
+  transform: scale(1.5);
+  transition: transform 2s ease-in-out;
+}
+
+/* --------------------
+     Products List
+-------------------- */
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 1050px;
+  background: #ffffff;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+.product {
+  width: 330px;
+  height: 474px;
+  background: #ffffff;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.product img {
+  width: 330px;
+}
+.p-color {
+  color: gray;
+}
+.see-more-button {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.see-more-button a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #e02c6d;
+}
+
+/* How to set up Home Studio */
+
+.home-studio {
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+}
+.studio {
+  width: 466px;
+  height: 309px;
+  margin-right: 69px;
+}
+.channel {
+  width: 567px;
+}
+
+/* Footer Style */
+footer {
+  background-image: linear-gradient(#141E30, #243B55);
+  padding: 20px;
+}
+.circle-shape {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #585b63;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+  color: white;
+}
+footer p {
+  margin: 0;
+  color: white;
+}
+footer h2 {
+  color: white;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 688px) {
+  header {
+    height: 695px;
+  }
+  nav,
+  main,
+  .header-heading,
+  .copa-highlights,
+  .sponsor-logo {
+    display: block;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  .header-heading img {
+    width: 329px;
+    height: 259.17px;
+    padding-left: 0;
+  }
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .highlights {
+    width: 329px;
+    height: 299px;
+  }
+  .logo {
+    margin-left: 50px;
+    margin-bottom: 15px;
+  }
+  footer img {
+    width: 275px;
+  }
+}
